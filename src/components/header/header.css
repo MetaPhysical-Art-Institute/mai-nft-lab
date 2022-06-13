@@ -1,0 +1,76 @@
+.header {
+    color: var(--light-text);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+    position:sticky;
+  }
+  
+  .header > div {
+    margin: 10px;
+  }
+  
+  .maiLogo {
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  
+  .headerItems {
+    display:flex;
+    justify-content:left;
+    @media screen (max-width: 767px) {
+      display: none;
+      
+    }
+  
+  
+      
+    }
+
+ 
+  
+ 
+  
+  
+  
+  .headerItems > :Link {
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: white;
+    font-size: larger;
+    font-family:monospace
+    
+    @media screen {
+      
+      
+    }
+  }
+
+  .headerItems > :visited {
+    color: rgb(255, 255, 255);
+    outline-color: blueviolet;
+
+  }
+
+  .headerItems > :hover {
+    color: blueviolet;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  .headerActions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerActions > div {
+    margin: 10px;
+    
+  }
+  
+ 
