@@ -1,0 +1,20 @@
+.test {
+    color: transparent(0, 0, 0);
+    
+}
+
+.marketplaceList {
+    display: flex;
+    overflow: scroll;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark-background);
+    justify-content: space-between;
+    color: transparent;
+    
+  }
+  
+  .marketplaceList::-webkit-scrollbar {
+    display: none;
+  }
+  

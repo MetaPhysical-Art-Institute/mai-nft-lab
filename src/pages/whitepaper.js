@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react' 
+import MAIWhitepaper from "./MAI WHITEPAPER APRIL 2022.2.pdf"
 
-const Whitepaper = () => {
+
+
+export default function Whitepaper() {
   return (
+    
     <div>
-    Whitepaper
+      <h3>MAI's Whitepaper</h3>
+    <iframe src={MAIWhitepaper} 
+    width="750px"
+    height="1000px"
+    > </iframe>
     </div>
-  )
+  );
 }
-
-export default Whitepaper
