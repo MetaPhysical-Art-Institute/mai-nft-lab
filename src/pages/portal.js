@@ -1,6 +1,7 @@
 import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-dev/react';
-import { ConnectButton, NFTBalance, WalletModal, Widget } from "web3uikit"
+import {  NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 
 function Portal() {
@@ -60,31 +61,19 @@ function Portal() {
                <p>congrats you are a member</p>
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
           <p>Your address: {address}</p>
+           <Link to="/pages/dao">DAO Dashboard</Link>
 
-          <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
-        <section style={{ display: 'flex', gap: '20px' }}>
-            <Widget info="Mainnet" title="ENVIRONMENT" />
-            <Widget info="15" title="Active Memberships">
-                <div>Welcome to MAI's DAO Portal</div>
-            </Widget>
-        </section>
-        <section style={{ display: 'flex', gap: '20px' }}>
-            <Widget info="72%" title="CPU" />
-            <Widget info="0 Bytes" title="NETWORK" />
-            <Widget info="Aug. 24th 2022" title="Next Event" />
-            <Widget info="24%" title="DISK" />
  
-         </section>
-         <NFTBalance
-  address={address}
-  chain="eth"
-/>
-    </div>
+      
+         
+         <NFTBalance address={address} chain="eth" />
+         
+         
+            </div>
           
 
 
-           </div>
-
+           
        )
    }
 
