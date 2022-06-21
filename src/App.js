@@ -1,13 +1,21 @@
 import { Outlet } from "react-router-dom";
 
+
+
 import "./app.css"
-import Header from "./components/header/header.js";
+
+import Header from "./components/Navbar/Navbar";
+
+
+
+
+
 
 
 export default function App() {
   return (
     <>
-      <Header />
+      <Header/>
   
    <div className="app">  
      

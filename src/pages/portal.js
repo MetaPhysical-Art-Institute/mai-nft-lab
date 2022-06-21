@@ -1,5 +1,5 @@
 import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-dev/react';
-import {  NFTBalance, Widget } from "web3uikit"
+import {  NFTBalance } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 

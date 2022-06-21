@@ -8,7 +8,7 @@ export default function Whitepaper() {
     
     <div>
       <h3>MAI's Whitepaper</h3>
-    <iframe src={MAIWhitepaper} 
+    <iframe title='Whitepaper' src={MAIWhitepaper} 
     width="750px"
     height="1000px"
     > </iframe>

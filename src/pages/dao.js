@@ -1,9 +1,7 @@
 import React from 'react'
 import { Widget } from 'web3uikit'
-import { useVote } from '@thirdweb-dev/react'
 
 const Dao = () => {
-const vote = useVote("0xF9160b0FC3B87178Cd75e2E9206FbAa788432778") 
 
 
 
