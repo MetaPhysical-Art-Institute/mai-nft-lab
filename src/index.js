@@ -29,6 +29,12 @@ root.render(
            <Route path="/pages/portal" element={<Portal />} />
            <Route path="pages/dao" element={<Dao />} />
            <Route path="pages/home" element={<Home />} />
+           <Route path="pages/artists/gyasi" element={<Gyasi />} />
+           <Route path="pages/artists/mai" element={<Mai />} />
+           <Route path="pages/artists/miton" element={<Milton />} />
+
+
+
          </Route>
        </Routes>
       </BrowserRouter>
