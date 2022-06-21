@@ -10,6 +10,8 @@ import Marketplace from "./pages/marketplace";
 import Whitepaper from "./pages/whitepaper";
 import Dao from "./pages/dao";
 import Home from "./pages/home";
+import Gyasi from "./pages/artists/gyasi/gyasi";
+import Mai from "./pages/artists/mai/mai";
 
 
 // This is the chainId your dApp will work on.
@@ -31,7 +33,7 @@ root.render(
            <Route path="pages/home" element={<Home />} />
            <Route path="pages/artists/gyasi" element={<Gyasi />} />
            <Route path="pages/artists/mai" element={<Mai />} />
-           <Route path="pages/artists/miton" element={<Milton />} />
+          
 
 
 

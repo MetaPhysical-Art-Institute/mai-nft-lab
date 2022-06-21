@@ -4,6 +4,7 @@ import "./Header.css";
 import { CSSTransition } from "react-transition-group";
 import maiLogo from "./MAILOGO.png"
 import { ConnectButton } from "web3uikit";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -42,10 +43,10 @@ export default function Header() {
         unmountOnExit
       >
         <nav className="Nav">
-          <a href="/pages/home">Home</a>
-          <a href="/pages/whitepaper">Whitepaper</a>
-          <a href="/pages/marketplace">Marketplace</a>
-          <a href="/pages/portal">The Lab</a>
+          <Link to="/pages/home">Home</Link>
+          <Link to="/pages/whitepaper">Whitepaper</Link>
+          <Link to="/pages/marketplace">Marketplace</Link>
+          <Link to="/pages/portal">The Lab</Link>
           <ConnectButton />
         </nav>
       </CSSTransition>

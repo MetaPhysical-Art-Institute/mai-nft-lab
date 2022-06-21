@@ -1,6 +1,13 @@
-.test {
+.marketplace {
     color: transparent(0, 0, 0);
+
     
+}
+
+.dropdownmenu{
+  align-items: center;
+  display:grid;
+  justify-content: center;
 }
 
 .marketplaceList {

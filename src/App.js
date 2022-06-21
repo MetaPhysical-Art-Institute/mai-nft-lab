@@ -17,11 +17,13 @@ export default function App() {
     <>
       <Header/>
   
-   <div className="app">  
-     
+  <div className="app">
       <Outlet />
+         
+      
+   
 
-    </div>  
+    </div>
 
         
     </>
