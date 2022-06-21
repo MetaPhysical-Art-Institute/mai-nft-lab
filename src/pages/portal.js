@@ -2,6 +2,7 @@ import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-de
 import {  NFTBalance } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import "./portal.css"
 
 
 function Portal() {
@@ -37,6 +38,7 @@ function Portal() {
    if (!address) {
          return (
              <>
+             <div className='signin'>
             <p>welcome sign in!</p> 
             {address ? (
         <>
@@ -46,6 +48,7 @@ function Portal() {
       ) : (
         <button onClick={connectWithMetamask}>Connect with Metamask</button>
       )}
+      </div>
              </>
          )
      }
@@ -57,7 +60,7 @@ function Portal() {
      ///////***MEMBERS AREA *////////
    if (hasClaimedNFT) {
        return (
-           <div>
+           <div className='member'>
                <p>congrats you are a member</p>
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
           <p>Your address: {address}</p>
@@ -97,6 +100,7 @@ function Portal() {
 
    return (
     <>
+    <div className='signin'>
       <p className="address">
         There are no Membership NFTs held by:{" "}
         <span className="value">{truncateAddress(address)}</span>
@@ -108,6 +112,7 @@ function Portal() {
       <button onClick={disconnectWallet}>Disconnect Wallet</button>
       <p>Purchase A Membership NFT From Our Marketplace To Gain Access To Our Members Only Portal!!</p>
       </center>
+      </div>
     </>
    );
   };

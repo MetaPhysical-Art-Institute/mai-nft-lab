@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import background from "../assets/videos/space.mp4"
+import welcome from "../assets/images/Welcome1.svg"
 import "./home.css"
 
 class Home extends Component {
@@ -19,8 +20,10 @@ class Home extends Component {
       <>
       <div style={myStyle}>
         <div className='home'>
-
+        <center>
         <h1>Welcome to MAI</h1>
+        <img src={welcome}></img>
+        </center>
       </div>
       </div>
       </>
