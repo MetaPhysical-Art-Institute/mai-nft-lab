@@ -11,6 +11,8 @@ const [value , setValue] = useState("");
 const handleChange = e => setValue(e.target.value)
 
   return (
+    <>
+    <div className='marketplace'>
 
     <div className='dropdownmenu'>
     <FormControl sx= {{ m:4, minWidth: 400, }} size="small" >
@@ -30,7 +32,8 @@ const handleChange = e => setValue(e.target.value)
 
     {value}
     </div>
-    
+    </div>
+    </>
     
   )
 }

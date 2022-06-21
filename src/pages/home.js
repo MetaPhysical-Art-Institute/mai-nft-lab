@@ -21,7 +21,6 @@ class Home extends Component {
       <div style={myStyle}>
         <div className='home'>
         <center>
-        <h1>Welcome to MAI</h1>
         <img src={welcome}></img>
         </center>
       </div>
