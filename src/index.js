@@ -4,7 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import { MoralisProvider } from "react-moralis";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import Portal from "./pages/portal";
 import Marketplace from "./pages/marketplace";
 import Whitepaper from "./pages/whitepaper";
@@ -12,6 +12,9 @@ import Dao from "./pages/dao";
 import Home from "./pages/home";
 import Gyasi from "./pages/artists/gyasi/gyasi";
 import Mai from "./pages/artists/mai/mai";
+import Header from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/footer";
+
 
 
 // This is the chainId your dApp will work on.
@@ -24,8 +27,9 @@ root.render(
     <MoralisProvider serverUrl="https://kf1zohbhx5sl.usemoralis.com:2053/server" appId="PoG6CNty9Vluwe7F0xvS9AFZs0AeGZCqeJ54TkhB">
     <ThirdwebProvider desiredChainId={activeChainId}>
       <BrowserRouter>
+      
        <Routes>
-         <Route path="/" element={<App />}>
+         <Route  path="/" element={<App/>}>
            <Route path="/pages/marketplace" element={<Marketplace />} />
            <Route path="/pages/whitepaper" element={<Whitepaper/>} />
            <Route path="/pages/portal" element={<Portal />} />
@@ -33,12 +37,14 @@ root.render(
            <Route path="pages/home" element={<Home />} />
            <Route path="pages/artists/gyasi" element={<Gyasi />} />
            <Route path="pages/artists/mai" element={<Mai />} />
+           <Route path="/" element={<Navigate to="/pages/home" replace />}></Route>
           
 
 
 
          </Route>
        </Routes>
+       
       </BrowserRouter>
     </ThirdwebProvider>
     </MoralisProvider>
