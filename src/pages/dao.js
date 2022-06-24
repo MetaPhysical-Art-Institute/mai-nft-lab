@@ -1,5 +1,6 @@
 import React from 'react'
 import { Widget } from 'web3uikit'
+import dao from "../assets/images/DAO.svg"
 
 const Dao = () => {
 
@@ -9,6 +10,7 @@ const Dao = () => {
  return (
     <>
     
+       <img src={dao}></img>
       <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
         <section style={{ display: 'flex', gap: '20px' }}>
             <Widget info="Mainnet" title="ENVIRONMENT" />

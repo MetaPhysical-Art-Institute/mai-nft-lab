@@ -1,8 +1,13 @@
 import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-dev/react';
-import {  NFTBalance } from "web3uikit"
+import {   NFTBalance } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./portal.css"
+import lab from "../assets/images/lab.svg"
+import cleanroom from "../assets/images/cleanroom.svg"
+import nft from "../assets/images/nfts.svg"
+import { Button } from 'shards-react';
+
 
 
 function Portal() {
@@ -39,7 +44,7 @@ function Portal() {
          return (
              <>
              <div className='signin'>
-            <p>welcome sign in!</p> 
+            <img src={lab}></img>
             {address ? (
         <>
           <button onClick={disconnectWallet}>Disconnect Wallet</button>
@@ -61,19 +66,21 @@ function Portal() {
    if (hasClaimedNFT) {
        return (
            <div className='member'>
-               <p>congrats you are a member</p>
+               <img src={cleanroom}></img>
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
-          <p>Your address: {address}</p>
-           <Link to="/pages/dao">DAO Dashboard</Link>
+          
+           <Link to="/pages/dao">
+             <Button>Dao Dashboard</Button>
+           </Link>
 
  
-      
-         
+         <div className='nft'>
+        
          <NFTBalance address={address} chain="eth" />
          
          
             </div>
-          
+          </div>
 
 
            

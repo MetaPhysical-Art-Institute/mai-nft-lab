@@ -1,5 +1,6 @@
 .marketplace {
-    color:aliceblue;
+    color:rgb(0, 0, 0);
+    background-color: aliceblue;
 
     
 }
@@ -8,7 +9,7 @@
   align-items: center;
   display:grid;
   justify-content: center;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .marketplaceList {

@@ -1,7 +1,13 @@
 .signin {
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .member {
-    color: aquamarine;
+    color: rgb(0, 0, 0);
+}
+
+.nft {
+  display: flex;
+  overflow: scroll;
+
 }

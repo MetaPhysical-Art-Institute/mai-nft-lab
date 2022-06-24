@@ -1,27 +1,23 @@
 
 import React, { Component } from 'react'
-import background from "../assets/videos/space.mp4"
-import welcome from "../assets/images/Welcome1.svg"
+
+import welcome from "../assets/images/welcome.svg"
+import home1 from "../assets/images/home1.svg"
+import home2 from "../assets/images/home2.svg"
 import "./home.css"
 
 class Home extends Component {
   render() {
-    const myStyle={
-      backgroundImage:`url(${background})`,
-      height: "100vh",
-      marginTop: "0px",
-      fontSize: "50px",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      
-    };
+
 
     return (
       <>
-      <div style={myStyle}>
+      <div>
         <div className='home'>
         <center>
         <img src={welcome}></img>
+        <img src={home1}></img>
+        <img src={home2}></img>
         </center>
       </div>
       </div>

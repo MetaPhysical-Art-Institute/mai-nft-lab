@@ -1,14 +1,14 @@
 
 import React from 'react' 
-import { Link } from 'react-router-dom';
 import MAIWhitepaper from "./MAI WHITEPAPER APRIL 2022.2.pdf"
 import "./whitepaper.css"
+
 
 
 export default function Whitepaper() {
   return (
     <>
-    
+ 
     <div className='whitepaper'>
      
     <iframe title='Whitepaper' src={MAIWhitepaper} 
@@ -22,12 +22,10 @@ export default function Whitepaper() {
 
     </div>
     < div className='mobilewhitepaper'>
-
-    <p>Whitepaper PDF only avaliable on Desktop. 
-      Please go to our website to read our Whitepaper
-       on your mobile device! Thank you!
-       </p> <a href="https://www.metaphysicalartinstitute.com">Click here!</a>
-      
+    <center>
+       <h3>PDF viewer enabled with displays larger than 760px. Please visit our website to read our Whitepaper on your mobile device.
+       </h3> <a href="https://www.metaphysicalartinstitute.com">Click here!</a>
+    </center> 
     </div>
     
     </>
