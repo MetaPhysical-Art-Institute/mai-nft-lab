@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 import welcome from "../assets/images/welcome.svg"
-import home1 from "../assets/images/home.svg"
+import home1 from "../assets/images/home1.svg"
 import home2 from "../assets/images/home2.svg"
 import "./home.css"
 
