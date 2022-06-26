@@ -37,6 +37,9 @@ root.render(
            <Route path="pages/home" element={<Home />} />
            <Route path="pages/artists/gyasi" element={<Gyasi />} />
            <Route path="pages/artists/mai" element={<Mai />} />
+           <Route path="/discord" element={() => {window.location.href = 'https://discord.gg/GgAYeUpVkW';
+           return null;
+          }}/>
            <Route path="/" element={<Navigate to="/pages/home" replace />}></Route>
           
 
