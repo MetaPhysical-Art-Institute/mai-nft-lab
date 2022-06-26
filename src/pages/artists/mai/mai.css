@@ -9,15 +9,5 @@
 
 }
 
-@media (max-width: 700px) {
-    .art img {
-      max-width: 350px;
-      
-    }
-
-    .thirdwebcard iframe {
-        max-width: 100px;
-    }
 
   
-}
