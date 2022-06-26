@@ -3,10 +3,13 @@ import gyasi from "./Gyasi.svg"
 
 const Gyasi = () => {
   return (
-    <div className='art'>
+    <div class="parent" className='art'>
 
       <img src={gyasi}></img>
+      
+      <div class="child" className="bio">
       <p>Artwork & Bio coming soon!</p>
+      </div>
 
     </div>
   )
