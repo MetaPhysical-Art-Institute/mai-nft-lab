@@ -18,7 +18,7 @@ const handleChange = e => setValue(e.target.value)
     
     <div className='marketplace'>
      <div className='bodega'> 
-      <img src={bodega}></img>
+      <img src={bodega} alt="bodega"></img>
     </div>
     
 

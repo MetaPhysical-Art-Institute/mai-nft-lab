@@ -1,3 +1,20 @@
 .thirdwebcard {
-    display: flex;
+    padding: 20px;
+    display: block;
+}
+
+.art {
+    padding: auto;
+
+}
+
+@media (max-width: 700px) {
+    .art img {
+      max-width: 350px;
+      
+    }
+
+    .thirdwebcard {
+        max-width: 350px;
+    }
 }
