@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.art {
+  display: flex;
+}
+
+
 .dropdownmenu{
   align-items: center;
   display:grid;
