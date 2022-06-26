@@ -3,7 +3,7 @@ import gyasi from "./Gyasi.svg"
 
 const Gyasi = () => {
   return (
-    <div>
+    <div className='art'>
 
       <img src={gyasi}></img>
       <p>Artwork & Bio coming soon!</p>
