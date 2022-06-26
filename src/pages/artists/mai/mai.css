@@ -1,6 +1,7 @@
 .thirdwebcard {
     padding: 20px;
     display: block;
+  
 }
 
 .art {
@@ -14,7 +15,9 @@
       
     }
 
-    .thirdwebcard {
-        max-width: 350px;
+    .thirdwebcard iframe {
+        max-width: 100px;
     }
+
+  
 }
