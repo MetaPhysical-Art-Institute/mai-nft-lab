@@ -1,8 +1,12 @@
 .marketplace {
     color:rgb(0, 0, 0);
-    background-color: aliceblue;
+   
 
     
+}
+
+.bodega {
+  align-items: center;
 }
 
 .dropdownmenu{
@@ -10,6 +14,7 @@
   display:grid;
   justify-content: center;
   color: rgb(0, 0, 0);
+  padding-left: 50px;
 }
 
 .marketplaceList {

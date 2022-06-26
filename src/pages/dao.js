@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { Button } from 'shards-react'
 import { Widget } from 'web3uikit'
 import dao from "../assets/images/DAO.svg"
+import "./dao.css"
 
 const Dao = () => {
 
@@ -11,22 +14,25 @@ const Dao = () => {
     <>
     
        <img src={dao}></img>
-      <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
-        <section style={{ display: 'flex', gap: '20px' }}>
-            <Widget info="Mainnet" title="ENVIRONMENT" />
-            <Widget info="15" title="Active Memberships">
-                <div>Welcome to MAI's DAO Portal</div>
-            </Widget>
-        </section>
-        <section style={{ display: 'flex', gap: '20px' }}>
-            <Widget info="72%" title="CPU" />
-            <Widget info="0 Bytes" title="NETWORK" />
-            <Widget info="Aug. 24th 2022" title="Next Event" />
-            <Widget info="24%" title="DISK" />
- 
-         </section>
+       <div className='widget'>
+       <Widget info='Voting Contract and Governance Token Launch Coming Soon'>
+        
+       
+       
+       </Widget>
+       
+
+</div>
+<div className="widget">
+       <Link to="/pages/portal">
+             <Button>back</Button>
+           </Link>
+
+</div>
+         
+      
     
-    </div>
+  
     
 
 </>

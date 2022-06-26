@@ -1,8 +1,14 @@
 import React from 'react'
+import gyasi from "./Gyasi.svg"
 
 const Gyasi = () => {
   return (
-    <div>image goes here</div>
+    <div>
+
+      <img src={gyasi}></img>
+      <p>Artwork & Bio coming soon!</p>
+
+    </div>
   )
 }
 

@@ -1,13 +1,13 @@
 import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-dev/react';
-import {   NFTBalance } from "web3uikit"
+import {   NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./portal.css"
 import lab from "../assets/images/lab.svg"
 import cleanroom from "../assets/images/cleanroom.svg"
-import nft from "../assets/images/nfts.svg"
 import { Button } from 'shards-react';
-
+import nonft from "../assets/images/nonft.svg"
+import nft from "../assets/images/nfts.svg"
 
 
 function Portal() {
@@ -51,7 +51,11 @@ function Portal() {
           <p>Your address: {address}</p>
         </>
       ) : (
+        <div>
         <button onClick={connectWithMetamask}>Connect with Metamask</button>
+
+        
+        </div>
       )}
       </div>
              </>
@@ -65,21 +69,42 @@ function Portal() {
      ///////***MEMBERS AREA *////////
    if (hasClaimedNFT) {
        return (
-           <div className='member'>
+           <div className='signin'>
                <img src={cleanroom}></img>
+               
+               <p>Welcome to the Lab. This is the main membership screen where event sign up widgets, your current wallets NFT holdings, and the link to the DAO dashboard will be. </p>
+               
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
+               &nbsp;&nbsp;&nbsp;
           
            <Link to="/pages/dao">
              <Button>Dao Dashboard</Button>
            </Link>
 
+
+
+           <div className='widget'>
+           <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
+        <section style={{ display: 'flex', gap: '20px' }}>
+           <Widget>
+
+             <div className='nft'>
+               <img src={nft}></img>
+             <NFTBalance address={address} chain="eth" />
+             </div>
+           </Widget>
+            </section>
+            <section>
+           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events"> 
+            <p>Contact an Associate on discord to Volunteer</p>
+       
+           </Widget>
+           
+           </section>
+           </div>
+          </div>
  
-         <div className='nft'>
-        
-         <NFTBalance address={address} chain="eth" />
          
-         
-            </div>
           </div>
 
 
@@ -108,16 +133,12 @@ function Portal() {
    return (
     <>
     <div className='signin'>
-      <p className="address">
-        There are no Membership NFTs held by:{" "}
-        <span className="value">{truncateAddress(address)}</span>
-      </p>
-      <div>
-        
-      </div>
+      <img src={nonft}></img>
+   
+     
       <center>
       <button onClick={disconnectWallet}>Disconnect Wallet</button>
-      <p>Purchase A Membership NFT From Our Marketplace To Gain Access To Our Members Only Portal!!</p>
+      
       </center>
       </div>
     </>
