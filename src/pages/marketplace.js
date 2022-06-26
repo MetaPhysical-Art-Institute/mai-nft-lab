@@ -22,8 +22,8 @@ const handleChange = e => setValue(e.target.value)
     </div>
     
 
-    <div className='dropdownmenu'>
-    <FormControl sx= {{ m:4, minWidth: 400, }} size="small" >
+    <div class="parent" className='dropdownmenu'>
+    <FormControl sx= {{ m:4, minWidth: 200, }} size="small" >
       <InputLabel>Select a Creative</InputLabel>
     <Select onChange={handleChange}>
     <MenuItem value={<Mai />}>MAI</MenuItem>
@@ -37,7 +37,8 @@ const handleChange = e => setValue(e.target.value)
 
     </Select>
     </FormControl>
-<div className='art'>
+
+<div  class="child" className='art'>
     {value}
     </div>
     </div>
