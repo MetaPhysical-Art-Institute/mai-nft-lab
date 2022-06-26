@@ -19,7 +19,6 @@ const Mai = () => {
        </iframe>
        &nbsp;&nbsp;&nbsp;
       
-    
 
     </div>
 

@@ -95,9 +95,12 @@ function Portal() {
            </Widget>
             </section>
             <section>
-           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events"> 
-            <p>Contact an Associate on discord to Volunteer</p>
-       
+           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events">
+           
+            <Button>
+             <a href="https://discord.gg/GgAYeUpVkW">Volunteer</a> 
+           </Button>
+      
            </Widget>
            
            </section>
