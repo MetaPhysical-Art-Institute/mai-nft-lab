@@ -1,6 +1,6 @@
 import React from 'react'
 import mai from "./MAI-MP.svg"
-import maibio from "./MAI-BIO1.svg"
+import maibio from "./MAI-BIO2.svg"
 
 const Mai = () => {
   return (
