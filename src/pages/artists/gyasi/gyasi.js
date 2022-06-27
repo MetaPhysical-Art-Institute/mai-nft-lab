@@ -5,7 +5,7 @@ const Gyasi = () => {
   return (
     <div class="parent" className='art'>
 
-      <img src={gyasi}></img>
+      <img alt='gyasi' src={gyasi}></img>
       
       <div class="child" className="bio">
       <p>Artwork & Bio coming soon!</p>
