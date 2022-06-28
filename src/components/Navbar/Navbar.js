@@ -45,8 +45,8 @@ export default function Header() {
         <nav className="Nav">
           <Link to="/pages/home">Home</Link>
           <Link to="/pages/whitepaper">Whitepaper</Link>
-          <Link to="/pages/marketplace">Marketplace</Link>
-          <Link to="/pages/portal">The Lab</Link>
+          <Link to="/pages/marketplace">Bodega</Link>
+          <Link to="/pages/portal">Lab</Link>
           <ConnectButton />
         </nav>
       </CSSTransition>

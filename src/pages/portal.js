@@ -66,13 +66,19 @@ function Portal() {
     
     
     
-     ///////***MEMBERS AREA *////////
+     ///////***MEMBERS AREA *//////// THE CLEAN ROOM ***///**** */
+
+
    if (hasClaimedNFT) {
        return (
            <div className='signin'>
                <img src={cleanroom}></img>
                
-               <p>Welcome to the Lab. This is the main membership screen where event sign up widgets, your current wallets NFT holdings, and the link to the DAO dashboard will be. </p>
+               <p>Welcome to your creative hub. This is the main membership area, 
+                 check below for future events, your connected address's NFT balance, 
+                 and the button to access the future DAO functions of this dApp. Below is a 
+                 button to access our discord. If it is your first time signing up, please go to the #collabland-join 
+                 channel and verify your membership NFT to activate all the channels! Thanks for being here! </p>
                
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
                &nbsp;&nbsp;&nbsp;
@@ -98,7 +104,7 @@ function Portal() {
            <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events">
            
             <Button>
-             <a href="https://discord.gg/GgAYeUpVkW">Volunteer</a> 
+             <a href="https://discord.gg/GgAYeUpVkW">Discord</a> 
            </Button>
       
            </Widget>
