@@ -1,10 +1,12 @@
-import react from "react";
+import React from 'react'
 import "./footer.css"
 
-const Footer = () => (
-    <div className="footer">
-        <p>MetaPhysical Art Institute 2022</p>
-    </div>
-);
+const Footer = () => {
+  return (
+      <center>
+    <div className='footer'>Powered by Ethereum & Polygon  //  MetaPhysical LLC 2022 </div>
+    </center>
+  )
+}
 
-export default Footer;
+export default Footer

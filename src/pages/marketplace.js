@@ -38,7 +38,7 @@ const handleChange = e => setValue(e.target.value)
     </Select>
     </FormControl>
 
-<div  class="child" className='art'>
+<div   className='art'>
     {value}
     </div>
     </div>
