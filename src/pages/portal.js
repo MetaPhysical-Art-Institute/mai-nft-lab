@@ -1,4 +1,4 @@
-import { useAddress, useDisconnect, useMetamask, useEdition } from '@thirdweb-dev/react';
+import { useAddress, useDisconnect, useMetamask, useEdition} from '@thirdweb-dev/react';
 import {   NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
@@ -14,6 +14,7 @@ function Portal() {
 
    const address = useAddress();
    const connectWithMetamask = useMetamask();
+  
    const disconnectWallet = useDisconnect();
    const Edition = useEdition("0x63C435B5fcC51eb1d5bA2fC9D6d1EB60348F018f")
    const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -53,6 +54,7 @@ function Portal() {
       ) : (
         <div>
         <button onClick={connectWithMetamask}>Connect with Metamask</button>
+        
 
         
         </div>
@@ -101,7 +103,12 @@ function Portal() {
            </Widget>
             </section>
             <section>
+           <Widget info="July 1st -- GT South IRL Meet-up 9PM" ></Widget>
+           
+           </section>
+            <section>
            <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events">
+           
            
             <Button>
              <a href="https://discord.gg/GgAYeUpVkW">Discord</a> 
@@ -110,6 +117,7 @@ function Portal() {
            </Widget>
            
            </section>
+          
            </div>
           </div>
  
