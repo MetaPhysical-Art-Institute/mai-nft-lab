@@ -103,7 +103,7 @@ function Portal() {
            </Widget>
             </section>
             <section>
-           <Widget info="July 1st -- GT South IRL Meet-up 9PM" ></Widget>
+           <Widget info="Next meet up TBA" ></Widget>
            
            </section>
             <section>
