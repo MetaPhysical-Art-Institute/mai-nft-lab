@@ -8,7 +8,8 @@ import cleanroom from "../assets/images/cleanroom.svg"
 import { Button } from 'shards-react';
 import nonft from "../assets/images/nonft.svg"
 import nft from "../assets/images/nfts.svg"
-
+import addy from "../assets/images/addy.svg"
+import schedule from "../assets/images/schedule.svg"
 
 function Portal() {
 
@@ -102,21 +103,25 @@ function Portal() {
              </div>
            </Widget>
             </section>
-            <section>
-           <Widget info="Next meet up TBA" ></Widget>
-           
-           </section>
-            <section>
-           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's Scheduled Events">
-           
-           
-            <Button>
-             <a href="https://discord.gg/GgAYeUpVkW">Discord</a> 
-           </Button>
-      
+            <section style={{display: 'inline'}}>
+           <Widget>
+             <img src={schedule}></img>  
            </Widget>
            
            </section>
+            <section>
+           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's First Comic Convention">
+           
+            </Widget>
+           </section>
+
+           <section>
+             <Widget> <img title='addy' src={addy}></img> </Widget>
+           </section>
+
+           <Button>
+             <a href="https://discord.gg/GgAYeUpVkW">Click here to join our Discord</a> 
+           </Button>
           
            </div>
           </div>

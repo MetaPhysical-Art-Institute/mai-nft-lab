@@ -4,6 +4,7 @@ import Mai from './artists/mai/mai';
 import './Marketplace.css';
 import bodega from "../assets/images/Bodega.svg"
 import Gyasi from './artists/gyasi/gyasi';
+import tba from "../assets/images/tba.svg"
 
 
 
@@ -28,12 +29,10 @@ const handleChange = e => setValue(e.target.value)
     <Select onChange={handleChange}>
     <MenuItem value={<Mai />}>MAI</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
-    <MenuItem value={"coming soon"}>TBA</MenuItem>
+    <MenuItem value={<img src={tba}></img>}>TBA</MenuItem>
+    <MenuItem value={<img src={tba}></img>}>TBA</MenuItem>
+    <MenuItem value={<img src={tba}></img>}>TBA</MenuItem>
+    <MenuItem value={<img src={tba}></img>}>TBA</MenuItem>
 
     </Select>
     </FormControl>
