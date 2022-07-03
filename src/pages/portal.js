@@ -103,9 +103,11 @@ function Portal() {
              </div>
            </Widget>
             </section>
-            <section style={{display: 'inline'}}>
+            <section>
            <Widget>
+             
              <img src={schedule}></img>  
+             
            </Widget>
            
            </section>
