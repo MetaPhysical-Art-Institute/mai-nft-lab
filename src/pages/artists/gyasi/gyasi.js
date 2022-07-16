@@ -13,7 +13,7 @@ const Gyasi = () => {
       <p>Just a regular dude that likes a lot of different things. My first collection is a song, 10 copies. The art work is computer generated and is dynamic, so over time the image will change. Check out the full listing on MAI's Rarible Marketplace and click "Get Unlockable Content" to download the song. Enjoy!</p>
       </div>
       <div>
-      <iframe
+      <iframe className='frame'
 src="https://gateway.ipfscdn.io/ipfs/QmZ3UzARChNBBVdqcbibQ63nvtePkRfnyieb89sXTRMLxE/marketplace.html?contract=0xd50CeE77dff5A6506e7b95Cb3e4EeA1fD3128F49&chainId=1&listingId=1&primaryColor=teal"
 width="300px"
 height="500px"
