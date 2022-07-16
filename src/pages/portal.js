@@ -76,15 +76,17 @@ function Portal() {
        return (
            <div className='signin'>
                <img src={cleanroom}></img>
-               
-               <p>Welcome to your creative hub. This is the main membership area, 
+               <div className='welcome'>
+               <h4>Welcome to your creative hub!!<br></br>  This is the main membership area, 
                  check below for future events, your connected address's NFT balance, 
                  and the button to access the future DAO functions of this dApp. Below is a 
                  button to access our discord. If it is your first time signing up, please go to the #collabland-join 
-                 channel and verify your membership NFT to activate all the channels! Thanks for being here! </p>
+                 channel and verify your membership NFT to activate all the channels! Once verified contact one of our team 
+                 members to begin the minting consultation. Thanks for being here! </h4>
+                 </div>
                
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
-               &nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           
            <Link to="/pages/dao">
              <Button>Dao Dashboard</Button>
