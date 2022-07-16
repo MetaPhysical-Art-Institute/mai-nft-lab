@@ -1,5 +1,5 @@
 import React from 'react'
-import maibio from "./MAI-BIO2.svg"
+import maibio from "./MAI-BIO.svg"
 
 const Mai = () => {
   return (
