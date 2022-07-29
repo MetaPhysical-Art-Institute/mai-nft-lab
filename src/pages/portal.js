@@ -8,7 +8,6 @@ import lab from "../assets/images/lab.svg"
 import cleanroom from "../assets/images/cleanroom.svg"
 import { Button } from 'shards-react';
 import nonft from "../assets/images/nonft.svg"
-import nft from "../assets/images/nfts.svg"
 import addy from "../assets/images/addy.svg"
 import schedule from "../assets/images/schedule.svg"
 
@@ -127,7 +126,7 @@ function Portal() {
            
            </section>
             <section>
-           <Widget info="July 29th-31st -- The Urban Nerd Con, Montgomery, Alabama " title="MAI's First Comic Convention">
+           <Widget info="Aug 12th -- GWOP DROP // 22 million GWOP tokens released " title="MAI's governance token drop">
            
             </Widget>
            </section>
