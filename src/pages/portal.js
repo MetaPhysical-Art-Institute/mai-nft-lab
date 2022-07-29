@@ -1,4 +1,5 @@
-import { useAddress, useDisconnect, useMetamask, useEdition} from '@thirdweb-dev/react';
+import { useAddress, useDisconnect, useMetamask, useEdition, useNetwork, } from '@thirdweb-dev/react';
+import { ChainId } from '@thirdweb-dev/sdk';
 import {   NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
@@ -15,7 +16,7 @@ function Portal() {
 
    const address = useAddress();
    const connectWithMetamask = useMetamask();
-  
+   const network = useNetwork();
    const disconnectWallet = useDisconnect();
    const Edition = useEdition("0x63C435B5fcC51eb1d5bA2fC9D6d1EB60348F018f")
    const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -65,6 +66,18 @@ function Portal() {
          )
      }
 
+     if (network?.[0].data.chain.id !== ChainId.Mainnet) {
+      return (
+        <div className="unsupported-network">
+          <h2>Please switch to Ethereum</h2>
+          <p>
+            This dApp only works on the Ethereum network, please switch networks in
+            your connected wallet.
+          </p>
+        </div>
+      );
+    }
+
 
     
     
@@ -78,7 +91,7 @@ function Portal() {
                <img src={cleanroom}></img>
                <div className='welcome'>
                <h4>Welcome to your creative hub!!<br></br>  This is the main membership area, 
-                 check below for future events, your connected address's NFT balance, 
+                 check below for future events, your connected wallet's NFT balance, 
                  and the button to access the future DAO functions of this dApp. Below is a 
                  button to access our discord. If it is your first time signing up, please go to the #collabland-join 
                  channel and verify your membership NFT to activate all the channels! Once verified contact one of our team 
@@ -100,7 +113,7 @@ function Portal() {
            <Widget>
 
              <div className='nft'>
-               <img src={nft}></img>
+               
              <NFTBalance address={address} chain="eth" />
              </div>
            </Widget>

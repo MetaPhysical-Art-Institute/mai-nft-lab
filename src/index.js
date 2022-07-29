@@ -12,8 +12,7 @@ import Dao from "./pages/dao";
 import Home from "./pages/home";
 import Gyasi from "./pages/artists/gyasi/gyasi";
 import Mai from "./pages/artists/mai/mai";
-import Header from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/footer";
+
 
 
 

@@ -1,7 +1,8 @@
 .widget {
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+    
 }
 
 .widget button {
