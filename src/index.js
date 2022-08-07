@@ -39,6 +39,9 @@ root.render(
            <Route path="/discord" element={() => {window.location.href = 'https://discord.gg/GgAYeUpVkW';
            return null;
           }}/>
+          <Route path="/vote" element={() => {window.location.href = 'https://mai-vote-dao.vercel.app';
+           return null;
+          }}/>
            <Route path="/" element={<Navigate to="/pages/home" replace />}></Route>
           
 

@@ -36,7 +36,7 @@ const fetchTokenBalances = async () => {
   const options = {
     chain: "matic",
     address: "0x38440C9799E19503CD1A45b56a380AbDf111d106",
-    to_block: "10253391",
+   
     
   };
   const balances = await Web3Api.account.getTokenBalances(options);
@@ -44,7 +44,7 @@ const fetchTokenBalances = async () => {
    
 }; 
 
-
+fetchTokenBalances();
   
 
 
@@ -69,7 +69,7 @@ const fetchTokenBalances = async () => {
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <p>MATIC Balance:  <NativeBalance /> </p>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <p>GWOP Treasury Balance: 27,771,415 </p>
+       <p>GWOP Treasury Balance: {fetchTokenBalances} </p>
 
       
 
@@ -79,8 +79,12 @@ const fetchTokenBalances = async () => {
        <h2>Welcome to MetaPhysical Art Institute's DAO!</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Here members will be able to view their MATIC balance, 
         the GWOP Treasury balance, and make proposals if they hold 15000 GWOP tokens or more. We are super excited to vote
         on whatever members decide to propose! Eventually we will decide where funds are spent once the GWOP token has some
-        liquidity on the exchanges! Get your MATIC ready because we are about to drop the GWOP!!!</p>
+        liquidity on the exchanges! Get your MATIC ready because we are about to drop the GWOP!!!  </p>
 
+      </Widget>
+      <Widget>
+        <p>We are currently building our voting dApp. It will be a separate app 
+        will run entirely on the Polygon network and will only be for the proposal and voting side of the DAO. Thanks for being here!</p>
       </Widget>
 
 
@@ -91,9 +95,12 @@ const fetchTokenBalances = async () => {
 
    <div className="widget">
        <Link to="/pages/portal">
-             <Button>back</Button>
+             <Button>The Lab</Button>
            </Link>
 
+        <Button>
+          <a href="https://mai-vote-dao.vercel.app">MAI Vote Dashboard</a>
+        </Button>
 </div>   
       
     
