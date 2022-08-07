@@ -17,6 +17,7 @@
   position: relative;
   overflow: scroll;
   max-height: 400px;
+  width: 100%;
 }
 
 .welcome{
@@ -103,6 +104,22 @@
   padding-left: 40px;
   align-items: center;
   display: flex;
+  
 
 }
 
+.discord {
+width: 100%;
+}
+
+.addy {
+  width: 100%;
+}
+
+.scheduleheader {
+  width: 100%;
+}
+
+.events {
+  width: 100%;
+}

@@ -118,22 +118,35 @@ function Portal() {
            </Widget>
             </section>
             <section>
+
+              <div className='scheduleheader'>
+          
            <Widget>
              
              <img src={schedule}></img>  
              
            </Widget>
-           
+           </div>
            </section>
             <section>
-           <Widget info="Aug 12th -- GWOP DROP // 22 million GWOP tokens released " title="MAI's governance token drop">
+              <div className='events'>
+                <Widget info="Aug 12th -- GWOP DROP // 22 million GWOP tokens released " title="MAI's governance token drop">
            
-            </Widget>
+                </Widget>
+             </div>
            </section>
 
            <section>
+            <div className='addy'>
              <Widget> <img title='addy' src={addy}></img> </Widget>
+            </div>
            </section>
+             
+           <Widget>
+            <div className='discord'>
+           <iframe src="https://discord.com/widget?id=936507135561433128&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+           </Widget>
 
            <Button>
              <a href="https://discord.gg/GgAYeUpVkW">Click here to join our Discord</a> 
