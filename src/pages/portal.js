@@ -10,6 +10,7 @@ import { Button } from 'shards-react';
 import nonft from "../assets/images/nonft.svg"
 import addy from "../assets/images/addy.svg"
 import schedule from "../assets/images/schedule.svg"
+import pste from "../assets/images/pste.svg"
 
 function Portal() {
 
@@ -68,11 +69,8 @@ function Portal() {
      if (network?.[0].data.chain.id !== ChainId.Mainnet) {
       return (
         <div className="unsupported-network">
-          <h2>Please switch to Ethereum</h2>
-          <p>
-            This dApp only works on the Ethereum network, please switch networks in
-            your connected wallet.
-          </p>
+         <img src={pste}></img>
+        
         </div>
       );
     }
@@ -89,20 +87,22 @@ function Portal() {
            <div className='signin'>
                <img src={cleanroom}></img>
                <div className='welcome'>
-               <h4>Welcome to your creative hub!!<br></br>  This is the main membership area, 
-                 check below for future events, your connected wallet's NFT balance, 
-                 and the button to access the future DAO functions of this dApp. Below is a 
-                 button to access our discord. If it is your first time signing up, please go to the #collabland-join 
-                 channel and verify your membership NFT to activate all the channels! Once verified contact one of our team 
-                 members to begin the minting consultation. Thanks for being here! </h4>
+               <h4>Welcome to the main membership area for MetaPhysical Art Institute!<br></br> 
+               Scroll down to see our scheduled events, your connected wallet's NFT balance, and a link to our exclusive discord
+               where you can talk with our team members on how to create your NFT collection. If it is your first time on our discord,
+               don't forget to hit the "#collab-join" channel and verify your membership to see all of the exclusive channels! As below 
+               is a button to our DAO Dashboard that is powered by Polygon & Thirdweb, please check it out! Soon links to our spatial.io 
+               gallery will be shared as well as dates to our first GWOP Gala. Stay Tuned. </h4>
                  </div>
                
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           
-           <Link to="/pages/dao">
+             <a href='https://mai-vote-dao.vercel.app'> 
              <Button>Dao Dashboard</Button>
-           </Link>
+             </a>
+             
+           
 
 
 
