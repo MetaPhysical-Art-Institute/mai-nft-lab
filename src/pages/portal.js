@@ -130,7 +130,7 @@ function Portal() {
            </section>
             <section>
               <div className='events'>
-                <Widget info="Aug 12th -- GWOP DROP // 22 million GWOP tokens released " title="MAI's governance token drop">
+                <Widget info="No Events Scheduled " title="">
            
                 </Widget>
              </div>
