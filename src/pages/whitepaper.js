@@ -1,6 +1,6 @@
 
 import React from 'react' 
-import MAIWhitepaper from "./MAI WHITEPAPER APRIL 2022.2.pdf"
+import MAIWhitepaper from "./MAI WHITEPAPER APRIL 2022.3.pdf"
 import "./whitepaper.css"
 
 
