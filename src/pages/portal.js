@@ -11,6 +11,7 @@ import nonft from "../assets/images/nonft.svg"
 import addy from "../assets/images/addy.svg"
 import schedule from "../assets/images/schedule.svg"
 import pste from "../assets/images/pste.svg"
+import spatial from "../assets/images/spatial.svg"
 
 function Portal() {
 
@@ -117,6 +118,28 @@ function Portal() {
              </div>
            </Widget>
             </section>
+
+            <section>
+              <div className='spatial'>
+              <Widget>
+              <img src={spatial}></img> 
+          
+              
+              </Widget>
+              </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
             <section>
 
               <div className='scheduleheader'>
@@ -128,13 +151,7 @@ function Portal() {
            </Widget>
            </div>
            </section>
-            <section>
-              <div className='events'>
-                <Widget info="No Events Scheduled " title="">
-           
-                </Widget>
-             </div>
-           </section>
+            
 
            <section>
             <div className='addy'>
