@@ -5,12 +5,14 @@ import "./gyasi.css"
 
 const Gyasi = () => {
   return (
-    <div class="parent" className='art'>
+    <div className='art'>
 
-      <img alt='gyasi' src={gyasi}></img>
+     <img alt='gyasi' src={gyasi}></img>
+
       
-      <div class="child" className="bio">
-      <p>Just a regular dude that likes a lot of different things. My first collection is a song, 10 copies. The art work is computer generated and is dynamic, so over time the image will change. Check out the full listing on MAI's Rarible Marketplace and click "Get Unlockable Content" to download the song. Enjoy!</p>
+      
+      <div className="bio">
+      <p>-------------------------------------------------------------------------------------------------------------------------</p>
       </div>
       <div>
       <iframe className='frame'
