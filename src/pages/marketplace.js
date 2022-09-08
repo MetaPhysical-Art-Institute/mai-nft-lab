@@ -7,6 +7,7 @@ import Gyasi from './artists/gyasi/gyasi';
 import tba from "../assets/images/tba.svg"
 import Kynadams from './artists/kynadams/kynadams';
 import Alana from './artists/alana/alana';
+import Milt from './artists/milton/milt';
 
 
 
@@ -33,7 +34,7 @@ const handleChange = e => setValue(e.target.value)
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
     <MenuItem value={<img src={tba}></img>}>Haru SaySo</MenuItem>
     <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
-    <MenuItem value={<img src={tba}></img>}>Milton Madison</MenuItem>
+    <MenuItem value={<Milt />}>Milton Madison</MenuItem>
     <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
 
     </Select>
