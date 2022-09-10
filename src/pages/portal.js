@@ -2,7 +2,6 @@ import { useAddress, useDisconnect, useMetamask, useEdition, useNetwork, } from 
 import { ChainId } from '@thirdweb-dev/sdk';
 import {   NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
 import "./portal.css"
 import lab from "../assets/images/lab.svg"
 import cleanroom from "../assets/images/cleanroom.svg"
@@ -131,9 +130,9 @@ function Portal() {
 
 
 
+          
 
-
-
+          
 
 
 

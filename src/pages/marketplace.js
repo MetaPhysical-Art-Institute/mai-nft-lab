@@ -8,6 +8,8 @@ import tba from "../assets/images/tba.svg"
 import Kynadams from './artists/kynadams/kynadams';
 import Alana from './artists/alana/alana';
 import Milt from './artists/milton/milt';
+import Viewall from './artists/viewall/viewall';
+
 
 
 
@@ -30,21 +32,24 @@ const handleChange = e => setValue(e.target.value)
     <FormControl sx= {{ m:4, minWidth: 250, }} size="small" >
       <InputLabel>Select a Creative</InputLabel>
     <Select onChange={handleChange}>
+    <MenuItem value={<Viewall />}>View all Creatives</MenuItem>
     <MenuItem value={<Mai />}>MAI</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
+    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
     <MenuItem value={<img src={tba}></img>}>Haru SaySo</MenuItem>
     <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
     <MenuItem value={<Milt />}>Milton Madison</MenuItem>
-    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
-
+    
     </Select>
     </FormControl>
+   
 
 <div   className='art'>
     {value}
     </div>
     </div>
     </div>
+    
     </>
     
   )
