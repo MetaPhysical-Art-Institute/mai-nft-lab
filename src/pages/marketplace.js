@@ -32,7 +32,7 @@ const handleChange = e => setValue(e.target.value)
     <FormControl sx= {{ m:4, minWidth: 250, }} size="small" >
       <InputLabel>Select a Creative</InputLabel>
     <Select onChange={handleChange}>
-    <MenuItem value={<Viewall />}>View all Creatives</MenuItem>
+    <MenuItem value={<Viewall />}>View the Architects</MenuItem>
     <MenuItem value={<Mai />}>MAI</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
     <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>

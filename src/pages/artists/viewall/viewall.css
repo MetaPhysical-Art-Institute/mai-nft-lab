@@ -35,13 +35,13 @@
   .item {
     flex: 0 32%;
     height: 100px;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
  }
 
  .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:center;
   align-items: center;
  }
@@ -50,6 +50,7 @@
   .item img {
     max-width: 100px;
     max-height: 100px;
+    
   }
 
 

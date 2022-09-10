@@ -6,10 +6,12 @@
 }
 
 .bodega {
+  justify-content: center;
   align-items: center;
 }
 
 .art {
+  justify-content: center;
   align-items: center;
   padding-right: 0px;
 }
