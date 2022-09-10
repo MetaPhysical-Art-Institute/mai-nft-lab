@@ -47,7 +47,7 @@ const Viewall = () => {
 
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
 
-               To view more from this artist, select them from the drop down menu. 
+               To view more from this artist, select them from the drop down menu above.
 
             </Typography>
 
