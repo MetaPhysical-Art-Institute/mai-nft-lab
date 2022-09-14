@@ -2,6 +2,7 @@ import React from 'react'
 import "./alana.css"
 import alana1 from "./alana1.svg"
 import alana2 from "./alana2.svg"
+import list from "./art.svg"
 
 
 const Alana = () => {
@@ -15,7 +16,7 @@ const Alana = () => {
  
  
  <div className="bio">
- <p>-------------------------------------------------------------------------------------------------------------------------</p>
+ <img className='img' src={list}></img>
  </div>
  </div>
   )

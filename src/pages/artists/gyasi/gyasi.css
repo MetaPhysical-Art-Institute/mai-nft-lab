@@ -91,3 +91,13 @@
   .rarible {
     padding: 20px;
   }
+
+  @media (max-width: 700px) {
+    .frame {
+      max-width: 300px;
+    }
+
+    
+  }
+
+

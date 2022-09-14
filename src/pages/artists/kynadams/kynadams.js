@@ -2,7 +2,7 @@ import React from 'react'
 import kyn from "./Kynadams.svg"
 import teckno from "./mancer.svg"
 import gif from "./mancers.gif"
-
+import list from "./art.svg"
 
 
 import "./kynadams.css"
@@ -16,7 +16,7 @@ const Kynadams = () => {
       
       
       <div className="bio">
-      <p>-------------------------------------------------------------------------------------------------------------------------</p>
+      <img src={list}></img>
       </div>
       <div>
 
