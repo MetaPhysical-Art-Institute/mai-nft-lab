@@ -35,10 +35,11 @@ const handleChange = e => setValue(e.target.value)
     <MenuItem value={<Viewall />}>View the Architects</MenuItem>
     <MenuItem value={<Mai />}>MAI</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
-    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
-    <MenuItem value={<img src={tba}></img>}>Haru SaySo</MenuItem>
-    <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
     <MenuItem value={<Milt />}>Milton Madison</MenuItem>
+    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
+    <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
+    <MenuItem value={<img src={tba}></img>}>Haru SaySo</MenuItem>
+    
     
     </Select>
     </FormControl>

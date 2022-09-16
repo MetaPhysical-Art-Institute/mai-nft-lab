@@ -3,6 +3,7 @@ import "./viewall.css"
 import kyn from "./kynPP.svg"
 import art from "./ArtistPP.svg"
 import gyasi from "./gyasiPP.svg"
+import Milt from "./MiltPP.svg"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -80,8 +81,8 @@ const Viewall = () => {
 
           <div className="item">
           <div>
-          <img alt='Haru SaySo' src={art}></img>
-          <Button onClick={handleOpen}>Haru Sayso</Button>
+          <img alt='Milton Madison' src={Milt}></img>
+          <Button onClick={handleOpen}>Milton Madison</Button>
 
           
 
@@ -99,8 +100,8 @@ const Viewall = () => {
           </div>
           <div className="item">
           <div>
-          <img alt='Milton Madison' src={art}></img>
-          <Button onClick={handleOpen}>Milton Madison</Button>
+          <img alt='Haru SaySo' src={art}></img>
+          <Button onClick={handleOpen}>Haru Sayso</Button>
 
           
 
