@@ -4,6 +4,7 @@ import kyn from "./kynPP.svg"
 import art from "./ArtistPP.svg"
 import gyasi from "./gyasiPP.svg"
 import Milt from "./MiltPP.svg"
+import Alana from "./AlanaPP.svg"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -91,7 +92,7 @@ const Viewall = () => {
 
           <div className="item">
           <div>
-          <img alt='Alana Enfinity' src={art}></img>
+          <img alt='Alana Enfinity' src={Alana}></img>
           <Button onClick={handleOpen}>Alana Enfinity</Button>
 
           
