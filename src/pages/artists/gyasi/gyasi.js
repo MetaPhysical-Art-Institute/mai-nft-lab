@@ -17,7 +17,7 @@ const Gyasi = () => {
       </div>
       <div>
       <iframe className='frame'
-src="https://gateway.ipfscdn.io/ipfs/QmZ3UzARChNBBVdqcbibQ63nvtePkRfnyieb89sXTRMLxE/marketplace.html?contract=0xd50CeE77dff5A6506e7b95Cb3e4EeA1fD3128F49&chainId=1&listingId=2&primaryColor=teal"
+src="https://charts.mongodb.com/charts-project-0-hooke/embed/dashboards?id=11966216-5182-4b00-ba58-796d49e8f3b8&theme=dark&autoRefresh=true&maxDataAge=300&showTitleAndDesc=false&scalingWidth=scale&scalingHeight=scale"
 width="600px"
 height="500px"
 frameBorder="0"
