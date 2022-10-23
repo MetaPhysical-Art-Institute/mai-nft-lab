@@ -16,11 +16,11 @@ const Gyasi = () => {
       <img src={list}></img>
       </div>
       <div>
-      <iframe className='frame'
-src="https://charts.mongodb.com/charts-project-0-hooke/embed/dashboards?id=11966216-5182-4b00-ba58-796d49e8f3b8&theme=dark&autoRefresh=true&maxDataAge=300&showTitleAndDesc=false&scalingWidth=scale&scalingHeight=scale"
-width="600px"
-height="500px"
-frameBorder="0"
+      <iframe
+src="https://gateway.ipfscdn.io/ipfs/QmYRUpn6nZjVrraGTTvHnFVAPAgiMoUvuPJAceTMMpBfCJ/marketplace.html?contract=0xd50CeE77dff5A6506e7b95Cb3e4EeA1fD3128F49&chainId=1&listingId=2&rpcUrl=https%3A%2F%2Feth-mainnet.g.alchemy.com%2Fv2%2FRU6Us2fG1BJwEKwnLDdYp8E-ShLYbIAB&theme=system&primaryColor=green&secondaryColor=cyan"
+width="500px"
+height="600px"
+
 ></iframe>
       </div>
       <div className='rarible'>
