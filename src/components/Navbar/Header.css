@@ -1,5 +1,6 @@
 .Header {
-  position:sticky;
+  position:relative;
+  z-index: 1;
   top: 0; /* Stick it to the top */
   max-height: 70px;
   width: 100vw;
