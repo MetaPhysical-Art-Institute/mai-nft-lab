@@ -14,7 +14,7 @@ export default function Shape() {
       <pointLight position={[-10, -10, -10]} />
       <Torusknot />
       <OrbitControls />
-      <AsciiRenderer fgColor="black" bgColor="transparent" characters={'.'+ address}/>
+      <AsciiRenderer fgColor="darkgreen" bgColor="transparent" characters={'.'+ address}/>
     </Canvas>
   )
 }

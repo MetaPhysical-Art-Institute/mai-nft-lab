@@ -90,15 +90,8 @@ function Portal() {
                <div className='shape'>
                <Shape />
                </div>
-               <div className='welcome'>
-               <h4>Welcome to the main membership area for MetaPhysical Art Institute!<br></br> 
-               Scroll down to see our scheduled events, your connected wallet's NFT balance, and a link to our exclusive discord
-               where you can talk with our team members on how to create your NFT collection. If it is your first time on our discord,
-               don't forget to hit the "#collab-join" channel and verify your membership to see all of the exclusive channels! Below 
-               is a button to our DAO Dashboard that is powered by Polygon & Thirdweb, please check it out! Soon links to our spatial.io 
-               gallery will be shared as well as dates to our first GWOP Gala. Stay Tuned. </h4>
-                 </div>
-               
+             
+               <br></br>  
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           
@@ -107,9 +100,7 @@ function Portal() {
              </a>
              
            
-           
-
-
+          
            <div className='widget'>
            <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
         <section style={{ display: 'flex', gap: '20px' }}>
