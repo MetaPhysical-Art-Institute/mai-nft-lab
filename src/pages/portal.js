@@ -1,4 +1,4 @@
-import { useAddress, useDisconnect, useMetamask, useEdition, useNetwork, } from '@thirdweb-dev/react';
+import { useAddress, useDisconnect, useMetamask, useContract, useNetwork, } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
 import {   NFTBalance, Widget } from "web3uikit"
 import { useState, useEffect } from "react";
@@ -19,7 +19,7 @@ function Portal() {
    const connectWithMetamask = useMetamask();
    const network = useNetwork();
    const disconnectWallet = useDisconnect();
-   const Edition = useEdition("0x63C435B5fcC51eb1d5bA2fC9D6d1EB60348F018f")
+   const edition = useContract("0x63C435B5fcC51eb1d5bA2fC9D6d1EB60348F018f", "edition").contract
    const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
    
    useEffect(() => {
@@ -29,7 +29,7 @@ function Portal() {
    
      const checkBalance = async () => {
             try {
-             const nfts = await Edition.getOwned(address);
+             const nfts = await edition.getOwned(address);
              setHasClaimedNFT(nfts?.length > 0);
             } catch (error) {
              setHasClaimedNFT(false);
@@ -37,7 +37,7 @@ function Portal() {
             }
           };
           checkBalance();
-   }, [address , Edition]);
+   }, [address , edition]);
      
   
   
