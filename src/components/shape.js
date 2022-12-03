@@ -5,7 +5,8 @@ import { AsciiEffect } from 'three-stdlib'
 import { useAddress } from '@thirdweb-dev/react'
 
 export default function Shape() {
-   
+  const address = useAddress();
+
   return (
     <Canvas>
       <color attach="background" args={['black']} />
@@ -13,7 +14,7 @@ export default function Shape() {
       <pointLight position={[-10, -10, -10]} />
       <Torusknot />
       <OrbitControls />
-      <AsciiRenderer fgColor="black" bgColor="transparent" />
+      <AsciiRenderer fgColor="black" bgColor="transparent" characters={'.'+ address}/>
     </Canvas>
   )
 }
