@@ -11,6 +11,7 @@ import addy from "../assets/images/addy.svg"
 import schedule from "../assets/images/schedule.svg"
 import pste from "../assets/images/pste.svg"
 import spatial from "../assets/images/spatial.svg"
+import Shape from '../components/shape';
 
 function Portal() {
 
@@ -86,6 +87,9 @@ function Portal() {
        return (
            <div className='signin'>
                <img src={cleanroom}></img>
+               <div className='shape'>
+               <Shape />
+               </div>
                <div className='welcome'>
                <h4>Welcome to the main membership area for MetaPhysical Art Institute!<br></br> 
                Scroll down to see our scheduled events, your connected wallet's NFT balance, and a link to our exclusive discord
@@ -103,7 +107,7 @@ function Portal() {
              </a>
              
            
-
+           
 
 
            <div className='widget'>
