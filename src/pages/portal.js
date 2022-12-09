@@ -98,69 +98,14 @@ function Portal() {
              <a href='https://mai-vote-dao.vercel.app'> 
              <Button>Dao Dashboard</Button>
              </a>
+
+             <br>
+             </br>
+             <p>Dashboard 2.0 Coming Soon!</p>
              
            
           
-           <div className='widget'>
-           <div style={{ display: 'grid', gap: '20px', padding: '40px 20px' }}>
-        <section style={{ display: 'flex', gap: '20px' }}>
-           <Widget>
-
-             <div className='nft'>
-               
-             <NFTBalance address={address} chain="eth" />
-             </div>
-           </Widget>
-            </section>
-
-            <section>
-              <div className='spatial'>
-              <Widget>
-              <img src={spatial}></img> 
-          
-              
-              </Widget>
-              </div>
-            </section>
-
-
-
-          
-
-          
-
-
-
-
-
-
-            <section>
-
-              <div className='scheduleheader'>
-          
-           <Widget>
-             
-             <img src={schedule}></img>  
-             
-           </Widget>
-           </div>
-           </section>
-            
-
-           <section>
-            <div className='addy'>
-             <Widget> <img title='addy' src={addy}></img> </Widget>
-            </div>
-           </section>
-             
-         
-
-           <Button>
-             <a href="https://discord.gg/GgAYeUpVkW">Click here to join our Discord</a> 
-           </Button>
-          
-           </div>
-          </div>
+        
  
          
           </div>
