@@ -5,8 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import { MoralisProvider } from "react-moralis";
 import { BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
-import Portal from "./pages/portal";
-import Marketplace from "./pages/marketplace";
+
+import Bodega from "./pages/bodega";
 import Whitepaper from "./pages/whitepaper";
 import Dao from "./pages/dao";
 import Home from "./pages/home";
@@ -29,9 +29,9 @@ root.render(
       
        <Routes>
          <Route  path="/" element={<App/>}>
-           <Route path="/pages/marketplace" element={<Marketplace />} />
+           <Route path="/pages/bodega" element={<Bodega />} />
            <Route path="/pages/whitepaper" element={<Whitepaper/>} />
-           <Route path="/pages/portal" element={<Portal />} />
+         
            <Route path="pages/dao" element={<Dao />} />
            <Route path="pages/home" element={<Home />} />
            <Route path="pages/artists/gyasi" element={<Gyasi />} />

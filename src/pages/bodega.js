@@ -1,7 +1,7 @@
 import { Select , MenuItem, FormControl, InputLabel } from '@mui/material';
 import React, { useState } from 'react'
 import Mai from './artists/mai/mai';
-import './Marketplace.css';
+import './bodega.css';
 import bodega from "../assets/images/Bodega.svg"
 import Gyasi from './artists/gyasi/gyasi';
 import tba from "../assets/images/tba.svg"
@@ -13,7 +13,7 @@ import Viewall from './artists/viewall/viewall';
 
 
 
-const Marketplace = () => {
+const Bodega = () => {
 const [value , setValue] = useState("");
 
 
@@ -29,11 +29,11 @@ const handleChange = e => setValue(e.target.value)
     
 
     <div class="parent" className='dropdownmenu'>
-    <FormControl sx= {{ m:4, minWidth: 250, }} size="small" >
+    <FormControl sx= {{ backgroundColor:'white',m:4, minWidth: 250, }} size="small" >
       <InputLabel>Select a Creative</InputLabel>
     <Select onChange={handleChange}>
     <MenuItem value={<Viewall />}>View the Architects</MenuItem>
-    <MenuItem value={<Mai />}>MAI</MenuItem>
+    <MenuItem value={<Mai />}>Purchase Membership Token</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
     <MenuItem value={<Milt />}>Milton Madison</MenuItem>
     <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
@@ -56,6 +56,6 @@ const handleChange = e => setValue(e.target.value)
   )
 }
 
-export default Marketplace
+export default Bodega
 
 

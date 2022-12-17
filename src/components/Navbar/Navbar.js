@@ -44,10 +44,9 @@ export default function Header() {
       >
         <nav className="Nav">
           <Link to="/pages/home">Home</Link>
-          <Link to="/pages/whitepaper">Whitepaper</Link>
-          <Link to="/pages/marketplace">Bodega</Link>
-          <Link to="/pages/portal">Lab</Link>
-          <ConnectButton />
+          <Link to="/pages/bodega">Bodega</Link>
+        
+          
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger">
