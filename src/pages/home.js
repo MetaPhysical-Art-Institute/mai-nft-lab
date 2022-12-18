@@ -10,7 +10,8 @@ import nonft from "../assets/images/nonft.svg"
 import giveaway from "../assets/images/giveaway3.png"
 import pste from "../assets/images/pste.svg"
 import Shape from '../components/shape';
-
+import Motm from '../components/new';
+import showcase from "../assets/images/showcase.svg"
 
 
 
@@ -94,8 +95,14 @@ function Home() {
                </div>
                <br></br><br></br>
                <div className='image'>
-                <img src={giveaway}></img>
+                <img src={giveaway}></img><br></br>
                 <img src={giveaway2}></img>
+                <br></br>
+                <img src={showcase}></img><br></br>
+                <div className='motm'>
+                <Motm />
+                </div>
+                <p>Your NFT will be featured here soon!</p>
 
 
                </div>
