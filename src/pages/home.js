@@ -9,8 +9,11 @@ import { Button } from 'shards-react';
 import nonft from "../assets/images/nonft.svg"
 
 import pste from "../assets/images/pste.svg"
-
 import Shape from '../components/shape';
+
+
+
+
 
 function Home() {
 

@@ -1,42 +1,104 @@
 import { useEffect, useRef, useState, useMemo, useLayoutEffect } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, useCursor } from '@react-three/drei'
-import { AsciiEffect } from 'three-stdlib'
 import { useAddress } from '@thirdweb-dev/react'
+import { SHA256 } from 'crypto-js'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import model from "../assets/images/MAINEWlogo1.gltf"
+import { PointsMaterial } from 'three'
+import { AsciiEffect } from 'three-stdlib'
+
+function hashCode(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash = hash & hash; // Convert to 32-bit integer
+  }
+  return hash;
+}
+
+function getColorFromAddress(address) {
+  // Convert the address string into a unique integer using the hashCode function
+  const hash = hashCode(address);
+
+  // Use the integer value to set the hue of an HSL color
+  const color = `hsl(${hash % 360}, 100%, 40%)`;
+
+  return color;
+}
 
 export default function Shape() {
   const address = useAddress();
+  const color = getColorFromAddress(address);
+  const walletAddress = useAddress();
 
   return (
     <Canvas>
-      <color attach="background" args={['black']} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+      <color attach="background" args={[""]} />
+      <spotLight position={[20, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Torusknot />
+      <Particlez  />
       <OrbitControls />
-      <AsciiRenderer fgColor="lime" bgColor="black" characters={'.'+ address}/>
+      <AsciiRenderer characters={'.'+ address} fgColor={color} bgColor="black" />
+
     </Canvas>
+  );
+}
+
+
+function Particlez(props) {
+  const walletAddress = useAddress()
+  const seed = SHA256(walletAddress)
+  const [clicked, click] = useState(false)
+  const [hovered, hover] = useState(false)
+  const hertz = parseInt(seed, 16)
+
+  // Add a single particle
+  const particles = [{ position: [0, 0, 0] }]
+
+  useCursor(hovered)
+  return (
+    <>
+      {particles.map((particle, index) => (
+        <Particle key={index} hertz={hertz} modelUrl={model} {...particle}  />
+      ))}
+    </>
   )
 }
 
-function Torusknot(props) {
+function Particle(props) {
+  const { hertz, modelUrl, ...rest } = props
   const ref = useRef()
-  const [clicked, click] = useState(false)
-  const [hovered, hover] = useState(false)
+  const material = useRef(new PointsMaterial({
+    
+    size: 0.1,
+    transparent: false,
+    opacity: 0.5
+  }))
+
+  useEffect(() => {
+    new GLTFLoader().load(modelUrl, gltf => {
+      const model = gltf.scene
+      ref.current.add(model)
+    })
+  }, [modelUrl])
+
+  useFrame((state, delta) => {
+    const t = state.clock.getElapsedTime();
   
-  useCursor(hovered)
-  useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 2))
+    // Increment the rotation values over time
+    ref.current.rotation.x = 0;
+    ref.current.rotation.y = (t * 0.5) % (2 * Math.PI) ;
+    ref.current.rotation.z = 0;
+  });
+  
+  
+  
+  
+  
+
   return (
-    <mesh
-      {...props}
-      ref={ref}
-      scale={clicked ? 1.5 : 1.25}
-      onClick={() => click(!clicked)}
-      onPointerOver={() => hover(true)}
-      onPointerOut={() => hover(false)}>
-      <torusKnotGeometry args={[1, 0.2, 128, 32]} />
-      <meshStandardMaterial color="orange" />
-    </mesh>
+    <points ref={ref} scale={[1, 1, 1]} material={material.current} {...rest} />
   )
 }
 
@@ -90,5 +152,4 @@ function AsciiRenderer({
   useFrame((state) => {
     effect.render(scene, camera)
   }, renderIndex)
-
 }

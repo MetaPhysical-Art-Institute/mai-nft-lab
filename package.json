@@ -32,6 +32,7 @@
     "shards-react": "^1.0.3",
     "styled-components": "^5.3.5",
     "three": "^0.147.0",
+    "utilise.hashcode": "^0.0.2",
     "web-vitals": "^2.1.4",
     "web3uikit": "^0.1.157"
   },
