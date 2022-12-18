@@ -168,3 +168,8 @@ width: 100%;
   display: inline-flex;
   height: 450px;
 }
+
+.font-link {
+  font-family: 'Raleway', sans-serif;
+
+}

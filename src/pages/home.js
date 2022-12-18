@@ -50,6 +50,7 @@ function Home() {
    if (!address) {
          return (
              <>
+             <div className='font-link'>
              <div className='signin'>
             <img src={lab}></img>
             {address ? (
@@ -65,6 +66,7 @@ function Home() {
         
         </div>
       )}
+      </div>
       </div>
              </>
          )
@@ -88,15 +90,20 @@ function Home() {
 
    if (hasClaimedNFT) {
        return (
+        <>
+        <div className='font-link'>
            <div className='signin'>
                <img src={cleanroom}></img>
+               
                <div className='shape'>
                <Shape />
                </div>
+               
                <br></br><br></br>
                <div className='image'>
                 <img src={giveaway}></img><br></br>
                 <img src={giveaway2}></img>
+                <p>If you don't already have your 15k GWOP tokens please alert one of the admin on discord to get you your tokens! You need 15k in order to make proposals to our DAO! </p>
                 <br></br>
                 <img src={showcase}></img><br></br>
                 <div className='motm'>
@@ -108,11 +115,11 @@ function Home() {
                </div>
              
                <br></br>  
-               <button onClick={disconnectWallet}>Disconnect Wallet</button>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+               
           
              <a href='https://mai-vote-dao.vercel.app'> 
-             <Button>Dao Dashboard</Button>
+             <Button>Proposal Dashboard</Button>
              </a>
 
              <br>
@@ -125,7 +132,8 @@ function Home() {
  
          
           </div>
-
+          </div>
+</>
 
            
        )
@@ -145,9 +153,7 @@ function Home() {
    
    ////***NON - MEMBERS AREA *//////
    
-   function truncateAddress(address) {
-       return `${address.slice(0, 6)}...${address.slice(-4)}`;
-   }
+   
 
    return (
     <>
@@ -156,8 +162,7 @@ function Home() {
    
      
       <center>
-      <button onClick={disconnectWallet}>Disconnect Wallet</button>
-      
+      <button onClick={disconnectWallet}>X</button>
       </center>
       </div>
     </>

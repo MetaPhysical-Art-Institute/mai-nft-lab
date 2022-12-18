@@ -5,13 +5,13 @@
   max-height: 70px;
   width: 100vw;
   padding: 1px;
-
   display: grid;
   grid-template-areas: "logo nav";
 
   /* Cosmetics */
   background-color: #000000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(50, 255, 4, 0.983) 0px 10px 20px, rgba(84, 246, 14, 0.893) 0px 6px 6px;
+
 }
 
 .Logo {
@@ -170,4 +170,10 @@
   opacity: 0;
   transform: scale(0.5);
   transition: opacity 350ms, transform 350ms;
+}
+.font-link {
+font-family: 'Raleway', sans-serif;
+}
+.disconnect{
+  max-width: 5px;
 }
