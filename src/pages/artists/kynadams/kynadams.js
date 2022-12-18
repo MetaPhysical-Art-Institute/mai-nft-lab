@@ -21,7 +21,8 @@ const Kynadams = () => {
       <div>
 
         <div className='teckno'>
-        <img alt='teckno' src={teckno}></img>
+          <a href='https://www.teknomancers.xyz'><img alt='teckno' src={teckno}></img></a>
+        
         </div>
         <div className='gif'>
         <img alt='gif' src={gif}></img>
