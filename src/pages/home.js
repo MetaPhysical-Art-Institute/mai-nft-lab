@@ -1,4 +1,4 @@
-import { useAddress, useDisconnect, useMetamask, useContract, useNetwork, ConnectWallet, } from '@thirdweb-dev/react';
+import { useAddress, useDisconnect, useContract, useNetwork, ConnectWallet, } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
 import giveaway2 from "../assets/images/Flower Giveaway.png"
 import { useState, useEffect } from "react";
@@ -19,7 +19,7 @@ import showcase from "../assets/images/showcase.svg"
 function Home() {
 
    const address = useAddress();
-   const connectWithMetamask = useMetamask();
+ 
    const network = useNetwork();
    const disconnectWallet = useDisconnect();
    const edition = useContract("0x63C435B5fcC51eb1d5bA2fC9D6d1EB60348F018f", "edition").contract
