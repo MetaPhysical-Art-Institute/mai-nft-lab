@@ -1,13 +1,13 @@
 import { useAddress, useDisconnect, useMetamask, useContract, useNetwork, ConnectWallet, } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
-
+import giveaway2 from "../assets/images/Flower Giveaway.png"
 import { useState, useEffect } from "react";
 import "./home.css"
 import lab from "../assets/images/lab.svg"
 import cleanroom from "../assets/images/cleanroom.svg"
 import { Button } from 'shards-react';
 import nonft from "../assets/images/nonft.svg"
-
+import giveaway from "../assets/images/giveaway3.png"
 import pste from "../assets/images/pste.svg"
 import Shape from '../components/shape';
 
@@ -92,6 +92,13 @@ function Home() {
                <div className='shape'>
                <Shape />
                </div>
+               <br></br><br></br>
+               <div className='image'>
+                <img src={giveaway}></img>
+                <img src={giveaway2}></img>
+
+
+               </div>
              
                <br></br>  
                <button onClick={disconnectWallet}>Disconnect Wallet</button>
@@ -103,7 +110,7 @@ function Home() {
 
              <br>
              </br>
-             <p>Dashboard 2.0 Coming Soon!</p>
+             <p>Links to our discord and spatial gallery coming soon!</p>
              
            
           

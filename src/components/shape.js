@@ -108,7 +108,7 @@ function AsciiRenderer({
   bgColor = 'black',
   fgColor = 'white',
   characters = '.metaphysical',
-  invert = true,
+  invert = false,
   color = false,
   resolution = 0.15
 }) {
