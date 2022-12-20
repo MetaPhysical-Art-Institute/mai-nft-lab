@@ -4,6 +4,7 @@ import kyn from "./kynPP.svg"
 import art from "./ArtistPP.svg"
 import gyasi from "./gyasiPP.svg"
 import Milt from "./MiltPP.svg"
+import trav from "./TravPP.svg"
 import Alana from "./AlanaPP.svg"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -82,6 +83,17 @@ const Viewall = () => {
 
           <div className="item">
           <div>
+          <img alt='Travis Rice' src={trav}></img>
+          <Button onClick={handleOpen}>Travis "Big TRAV" Rice</Button>
+
+          
+
+          </div>
+          </div>
+
+
+          <div className="item">
+          <div>
           <img alt='Milton Madison' src={Milt}></img>
           <Button onClick={handleOpen}>Milton Madison</Button>
 
@@ -109,15 +121,7 @@ const Viewall = () => {
           </div>
           </div>
 
-          <div className="item">
-          <div>
-          <img alt='TBA' src={art}></img>
-          <Button onClick={handleOpen}>TBA</Button>
-
           
-
-          </div>
-          </div>
           
           
           
