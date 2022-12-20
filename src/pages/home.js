@@ -12,6 +12,7 @@ import pste from "../assets/images/pste.svg"
 import Shape from '../components/shape';
 import Motm from '../components/new';
 import showcase from "../assets/images/showcase.svg"
+import Counter from '../components/counter';
 
 
 
@@ -110,6 +111,8 @@ function Home() {
                 <Motm />
                 </div>
                 <p>Your NFT will be featured here soon!</p>
+
+                <Counter />
 
 
                </div>

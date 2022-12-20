@@ -23,7 +23,7 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <MoralisProvider serverUrl="https://kf1zohbhx5sl.usemoralis.com:2053/server" appId="PoG6CNty9Vluwe7F0xvS9AFZs0AeGZCqeJ54TkhB">
+    
     <ThirdwebProvider desiredChainId={activeChainId}>
       <BrowserRouter>
       
@@ -52,7 +52,7 @@ root.render(
        
       </BrowserRouter>
     </ThirdwebProvider>
-    </MoralisProvider>
+ 
   </React.StrictMode>
 );
 
