@@ -8,7 +8,8 @@ import tba from "../assets/images/tba.svg"
 import Kynadams from './artists/kynadams/kynadams';
 import Alana from './artists/alana/alana';
 import Milt from './artists/milton/milt';
-import Trav from './artists/trav/trav'
+import Trav from './artists/trav/trav';
+import Haru from './artists/haru/haru';
 import Viewall from './artists/viewall/viewall';
 
 
@@ -40,7 +41,7 @@ const handleChange = e => setValue(e.target.value)
     <MenuItem value={<Trav />}>Travis "Big TRAV" Rice</MenuItem>
     <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
     <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
-    <MenuItem value={<img src={tba}></img>}>Haru SaySo</MenuItem>
+    <MenuItem value={<Haru />}>Haru SaySo</MenuItem>
     
     
     </Select>

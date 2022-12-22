@@ -122,13 +122,13 @@ function Home() {
                
           
              <a href='https://mai-vote-dao.vercel.app'> 
-             <Button>Proposal Dashboard</Button> &nbsp;&nbsp; <button onClick={disconnectWallet}>Disconnect</button>
+             <Button>Proposal Dashboard</Button> <br></br><br></br> <button onClick={disconnectWallet}>Disconnect</button>
              </a>
 
              <br>
              </br>
              <p>Links to our discord and spatial gallery coming soon!</p>
-             <button onClick={disconnectWallet}>Disconnect</button>
+             
            
           
         

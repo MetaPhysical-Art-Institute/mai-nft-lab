@@ -6,6 +6,7 @@ import gyasi from "./gyasiPP.svg"
 import Milt from "./MiltPP.svg"
 import trav from "./TravPP.svg"
 import Alana from "./AlanaPP.svg"
+import Haru from "./HaruPP.svg"
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -68,6 +69,15 @@ const Viewall = () => {
 
           </div>
           </div>
+          <div className="item">
+          <div>
+          <img alt='Haru SaySo' src={Haru}></img>
+          <Button onClick={handleOpen}>Haru Sayso</Button>
+
+          
+
+          </div>
+          </div>
 
 
           <div className="item">
@@ -111,15 +121,7 @@ const Viewall = () => {
 
           </div>
           </div>
-          <div className="item">
-          <div>
-          <img alt='Haru SaySo' src={art}></img>
-          <Button onClick={handleOpen}>Haru Sayso</Button>
-
           
-
-          </div>
-          </div>
 
           
           

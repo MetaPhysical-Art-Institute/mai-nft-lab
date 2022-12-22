@@ -3,6 +3,7 @@ import kyn from "./Kynadams.svg"
 import teckno from "./mancer.svg"
 import gif from "./mancers.gif"
 import list from "./art.svg"
+import quote from "./kynquote.svg"
 
 
 import "./kynadams.css"
@@ -13,6 +14,7 @@ const Kynadams = () => {
     <div className='art'>
 
      <img alt='kyn' src={kyn}></img> 
+     <a href='https://www.metaphysicalartinstitute.com/post/artist-exchange-004'><img src={quote}></img></a>
       
       
       <div className="bio">
