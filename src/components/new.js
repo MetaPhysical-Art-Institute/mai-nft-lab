@@ -35,7 +35,7 @@ export default function Motm() {
   return (
     <Canvas>
       <color attach="background" args={[""]} />
-      <spotLight position={[20, 10, 10]} angle={15.15} penumbra={1} />
+      <spotLight position={[0, 10, 10]} angle={20.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
       <Particlez  />
       <OrbitControls />
