@@ -4,7 +4,7 @@ import { OrbitControls, useCursor } from '@react-three/drei'
 import { useAddress } from '@thirdweb-dev/react'
 import { SHA256 } from 'crypto-js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import model from "../assets/threed/MAINEWlogo1.gltf"
+import model from "../assets/threed/dscndnts2.gltf"
 import { PointsMaterial } from 'three'
 import { AsciiEffect } from 'three-stdlib'
 
@@ -35,7 +35,7 @@ export default function Motm() {
   return (
     <Canvas>
       <color attach="background" args={[""]} />
-      <spotLight position={[20, 10, 10]} angle={0.15} penumbra={1} />
+      <spotLight position={[20, 10, 10]} angle={15.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
       <Particlez  />
       <OrbitControls />
@@ -53,7 +53,7 @@ function Particlez(props) {
   const hertz = parseInt(seed, 16)
 
   // Add a single particle
-  const particles = [{ position: [0, 0, 0] }]
+  const particles = [{ position: [-3, -3, -3] }]
 
   useCursor(hovered)
   return (

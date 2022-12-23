@@ -110,7 +110,7 @@ function Home() {
                 <div className='motm'>
                 <Motm />
                 </div>
-                <p>Your NFT will be featured here soon!</p>
+                <p>New collection from artist Milton Madison - DSCNDNTS - Coming soon!</p>
 
                 <Counter />
 

@@ -4,6 +4,8 @@ import milt2 from "./milt2.svg"
 import milt3 from "./milt3.svg"
 import list from "./art.svg"
 import quote from "./miltquote.svg"
+import dsc2 from "./dscndnts2.svg"
+import dsc3 from "./dscndnts3.svg"
 
 const Milt = () => {
   return (
@@ -19,6 +21,11 @@ const Milt = () => {
  
  <div className="bio">
  <img className='img' src={list}></img>
+
+ <div className='dsc'>
+<img className='dsc' src={dsc2}></img><img className='dsc' src={dsc3}></img>
+
+ </div>
  </div>
  </div>
   )

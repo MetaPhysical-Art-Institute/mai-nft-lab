@@ -96,6 +96,13 @@
   width: 600px;
  }
 
+ .dsc{
+  max-width: 200px;
+
+ }
+
+ 
+
 
   @media (max-width: 700px) {
     .img {
