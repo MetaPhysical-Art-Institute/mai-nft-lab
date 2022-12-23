@@ -69,37 +69,9 @@ const Viewall = () => {
 
           </div>
           </div>
-          <div className="item">
-          <div>
-          <img alt='Haru SaySo' src={Haru}></img>
-          <Button onClick={handleOpen}>Haru Sayso</Button>
+         
 
           
-
-          </div>
-          </div>
-
-
-          <div className="item">
-          <div>
-          <img alt='KynAdams.eth' src={kyn}></img>
-          <Button onClick={handleOpen}>KynAdams.eth</Button>
-
-          
-
-          </div>
-          </div>
-
-
-          <div className="item">
-          <div>
-          <img alt='Travis Rice' src={trav}></img>
-          <Button onClick={handleOpen}>Travis "Big TRAV" Rice</Button>
-
-          
-
-          </div>
-          </div>
 
 
           <div className="item">
@@ -121,6 +93,63 @@ const Viewall = () => {
 
           </div>
           </div>
+          <div className="item">
+          <div>
+          <img alt='Haru SaySo' src={Haru}></img>
+          <Button onClick={handleOpen}>Haru Sayso</Button>
+
+          
+
+          </div>
+          </div>
+
+
+          <div className="item">
+          <div>
+          <img alt='KynAdams.eth' src={kyn}></img>
+          <Button onClick={handleOpen}>KynAdams.eth</Button>
+
+          
+
+          </div>
+          </div>
+          <div className="item">
+          <div>
+          <img alt='Travis Rice' src={trav}></img>
+          <Button onClick={handleOpen}>Travis "Big TRAV" Rice</Button>
+
+          
+
+          </div>
+          </div>
+          <div className="item">
+          <div>
+          <img alt='coming soon' src={art}></img>
+          <Button onClick={handleOpen}>coming soon</Button>
+
+          
+
+          </div>
+          </div>
+          <div className="item">
+          <div>
+          <img alt='coming soon' src={art}></img>
+          <Button onClick={handleOpen}>coming soon</Button>
+
+          
+
+          </div>
+          </div>
+          <div className="item">
+          <div>
+          <img alt='coming soon' src={art}></img>
+          <Button onClick={handleOpen}>coming soon</Button>
+
+          
+
+          </div>
+          </div>
+
           
 
           
