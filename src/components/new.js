@@ -97,7 +97,7 @@ function Particle(props) {
   
 
   return (
-    <points ref={ref} scale={[1, 1, 1]} material={material.current} {...rest} />
+    <points ref={ref} scale={[2, 2, 2]} material={material.current} {...rest} />
   )
 }
 

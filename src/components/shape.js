@@ -29,6 +29,7 @@ function getColorFromAddress(address) {
 
 export default function Shape() {
   const address = useAddress();
+  const ascii = useAddress();
   const color = getColorFromAddress(address);
   const walletAddress = useAddress();
 
@@ -39,7 +40,7 @@ export default function Shape() {
       <pointLight position={[-10, -10, -10]} />
       <Particlez  />
       <OrbitControls />
-      <AsciiRenderer characters={'.'+ address} fgColor={color} bgColor="black" />
+      <AsciiRenderer characters={'.'+ ascii} fgColor={color} bgColor="black" />
 
     </Canvas>
   );
