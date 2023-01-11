@@ -4,7 +4,7 @@ import { OrbitControls, useCursor } from '@react-three/drei'
 import { useAddress } from '@thirdweb-dev/react'
 import { SHA256 } from 'crypto-js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import model from "../assets/threed/dscndnts2.gltf"
+import model from "../assets/threed/turtle.gltf"
 import { PointsMaterial } from 'three'
 import { AsciiEffect } from 'three-stdlib'
 

@@ -110,7 +110,7 @@ function Home() {
                 <div className='motm'>
                 <Motm />
                 </div>
-                <p>New collection from artist Milton Madison - DSCNDNTS - Coming soon!</p>
+                <p>New collection from artist Alana Enfinity - "Past & Present" - Coming soon!</p>
 
                 <Counter />
 
