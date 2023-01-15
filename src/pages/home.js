@@ -1,4 +1,4 @@
-import { useAddress, useDisconnect, useContract, useNetwork, ConnectWallet, MediaRenderer } from '@thirdweb-dev/react';
+import { useAddress, useDisconnect, useContract, useNetwork, ConnectWallet } from '@thirdweb-dev/react';
 import { ChainId } from '@thirdweb-dev/sdk';
 import giveaway2 from "../assets/images/Flower Giveaway.png"
 import { useState, useEffect } from "react";
@@ -113,7 +113,7 @@ function Home() {
                 <p>New collection from artist Alana Enfinity - "Past & Present" - Coming soon!</p>
 
                 <Counter />
-<MediaRenderer src={"https://gateway.ipfscdn.io/ipfs/QmUT5pRRqVSb3vq75Q4R3LMAj8K4Mu2qzspypLnEzbCgni"} />
+
 
                </div>
              
