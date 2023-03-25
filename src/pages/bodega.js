@@ -36,12 +36,14 @@ const handleChange = e => setValue(e.target.value)
     <Select onChange={handleChange}>
     <MenuItem value={<Viewall />}>View the Architects</MenuItem>
     <MenuItem value={<Mai />}>Purchase Membership Token</MenuItem>
+    <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
     <MenuItem value={<Gyasi />}>Gyasi</MenuItem>
+    <MenuItem value={<Haru />}>Haru SaySo</MenuItem>
+    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
     <MenuItem value={<Milt />}>Milton Madison</MenuItem>
     <MenuItem value={<Trav />}>Travis "Big TRAV" Rice</MenuItem>
-    <MenuItem value={<Kynadams /> }>KynAdams.eth</MenuItem>
-    <MenuItem value={<Alana />}>Alana Enfinity</MenuItem>
-    <MenuItem value={<Haru />}>Haru SaySo</MenuItem>
+    
+    
     
     
     </Select>
