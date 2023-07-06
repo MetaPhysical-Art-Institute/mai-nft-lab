@@ -78,7 +78,7 @@ function Particle(props) {
   useEffect(() => {
     new GLTFLoader().load(modelUrl, gltf => {
       const model = gltf.scene
-      ref.current.add(model)
+      ref.current.add("")
     })
   }, [modelUrl])
 

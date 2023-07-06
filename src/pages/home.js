@@ -13,6 +13,7 @@ import Shape from '../components/shape';
 import Motm from '../components/new';
 import showcase from "../assets/images/showcase.svg"
 import Counter from '../components/counter';
+import { Link } from 'react-router-dom';
 
 
 
@@ -110,7 +111,11 @@ function Home() {
                 <div className='motm'>
                 <Motm />
                 </div>
-                <p>New collection from artist Alana Enfinity - "Past & Present" - Coming soon!</p>
+                <p>No Collections - TBD </p>
+
+                <p>Check out Journey to the Mothership here!! <br></br>
+                  <Link to={"https://mothershipgame.com/pages/game"} >Play Journey to the Mothership!</Link>
+                </p>
 
                 <Counter />
 
