@@ -24,7 +24,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider desiredChainId={activeChainId} clientId="127094e8f766a67648b0ff9b9c6457a1">
       <BrowserRouter>
       
        <Routes>

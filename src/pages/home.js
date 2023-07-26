@@ -74,14 +74,7 @@ function Home() {
          )
      }
 
-     if (network?.[0].data.chain.id !== ChainId.Mainnet) {
-      return (
-        <div className="unsupported-network">
-         <img src={pste}></img>
-        
-        </div>
-      );
-    }
+     
 
 
     
